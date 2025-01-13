@@ -154,95 +154,95 @@ class BuilderOptionsFrame(ctk.CTkFrame):
 
 		# Controls
 
-		self.C2EntryControl = ctk.CTkEntry(self, placeholder_text= "Enter Webhook Here", height= 38, font= self.font, text_color= "white")
-		self.C2EntryControl.grid(row= 0, column= 0, sticky= "ew", padx= (15, 5), columnspan= 5)
+		self.C2EntryControl = ctk.CTkEntry(self, placeholder_text= "Enter Webhook Here", height= 38, font= self.font, text_color= "black")
+		self.C2EntryControl.grid(row= 5, column= 0, sticky= "ew", padx= (0, 0), columnspan= 5)
 
-		self.testC2ButtonControl = ctk.CTkButton(self, text= "Test Webhook", height= 38, font= self.font, fg_color= "#454545", hover_color= "#4D4D4D", text_color_disabled= "grey", command= lambda: Thread(target= self.testC2ButtonControl_Callback).start())
-		self.testC2ButtonControl.grid(row= 0, column= 5, sticky= "ew", padx = (5, 15))
+		self.testC2ButtonControl = ctk.CTkButton(self, text= "Test Webhook", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#4D4D4D", text_color_disabled= "grey", command= lambda: Thread(target= self.testC2ButtonControl_Callback).start())
+		self.testC2ButtonControl.grid(row= 6, column= 5, sticky= "ew", padx = (10, 0))
 		
-		self.pingMeCheckboxControl = ctk.CTkCheckBox(self, text= "Ping Me", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.pingMeVar)
-		self.pingMeCheckboxControl.grid(row= 1, column= 0, sticky= "w", padx= 20)
+		self.pingMeCheckboxControl = ctk.CTkCheckBox(self, text= "Ping Me", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.pingMeVar)
+		self.pingMeCheckboxControl.grid(row= 1, column= 0, sticky= "w", padx= 0)
 
-		self.vmProtectCheckboxControl = ctk.CTkCheckBox(self, text= "Anti VM", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.vmProtectVar)
-		self.vmProtectCheckboxControl.grid(row= 2, column= 0, sticky= "w", padx= 20)
+		self.vmProtectCheckboxControl = ctk.CTkCheckBox(self, text= "Anti VM", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.vmProtectVar)
+		self.vmProtectCheckboxControl.grid(row= 2, column= 0, sticky= "w", padx= 0)
 
-		self.startupCheckboxControl = ctk.CTkCheckBox(self, text= "Put On Startup", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.startupVar)
-		self.startupCheckboxControl.grid(row= 3, column= 0, sticky= "w", padx= 20)
+		self.startupCheckboxControl = ctk.CTkCheckBox(self, text= "Put On Startup", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.startupVar)
+		self.startupCheckboxControl.grid(row= 3, column= 0, sticky= "w", padx= 0)
 
-		self.meltCheckboxControl = ctk.CTkCheckBox(self, text= "Melt Stub", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.meltVar)
-		self.meltCheckboxControl.grid(row= 4, column= 0, sticky= "w", padx= 20)
+		self.meltCheckboxControl = ctk.CTkCheckBox(self, text= "Melt Stub", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.meltVar)
+		self.meltCheckboxControl.grid(row= 4, column= 0, sticky= "w", padx= 0)
 
-		self.pumpStubCheckboxControl = ctk.CTkCheckBox(self, text= "Pump Stub", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", command= self.pumpStub_Event, variable= self.pumpStubVar)
-		self.pumpStubCheckboxControl.grid(row= 5, column= 0, sticky= "w", padx= 20)
+		self.pumpStubCheckboxControl = ctk.CTkCheckBox(self, text= "Pump Stub", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", command= self.pumpStub_Event, variable= self.pumpStubVar)
+		self.pumpStubCheckboxControl.grid(row= 0, column= 0, sticky= "w", padx= 0)
 
-		self.captureWebcamCheckboxControl = ctk.CTkCheckBox(self, text= "Webcam", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureWebcamVar)
-		self.captureWebcamCheckboxControl.grid(row= 1, column= 1, sticky= "w", padx= 20)
+		self.captureWebcamCheckboxControl = ctk.CTkCheckBox(self, text= "Webcam", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureWebcamVar)
+		self.captureWebcamCheckboxControl.grid(row= 1, column= 1, sticky= "w", padx= 0)
 
-		self.capturePasswordsCheckboxControl = ctk.CTkCheckBox(self, text= "Passwords", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.capturePasswordsVar)
-		self.capturePasswordsCheckboxControl.grid(row= 2, column= 1, sticky= "w", padx= 20)
+		self.capturePasswordsCheckboxControl = ctk.CTkCheckBox(self, text= "Passwords", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.capturePasswordsVar)
+		self.capturePasswordsCheckboxControl.grid(row= 2, column= 1, sticky= "w", padx= 0)
 
-		self.captureCookiesCheckboxControl = ctk.CTkCheckBox(self, text= "Cookies", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureCookiesVar)
-		self.captureCookiesCheckboxControl.grid(row= 3, column= 1, sticky= "w", padx= 20)
+		self.captureCookiesCheckboxControl = ctk.CTkCheckBox(self, text= "Cookies", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureCookiesVar)
+		self.captureCookiesCheckboxControl.grid(row= 3, column= 1, sticky= "w", padx= 0)
 
-		self.captureHistoryCheckboxControl = ctk.CTkCheckBox(self, text= "History", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureHistoryVar)
-		self.captureHistoryCheckboxControl.grid(row= 4, column= 1, sticky= "w", padx= 20)
+		self.captureHistoryCheckboxControl = ctk.CTkCheckBox(self, text= "History", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureHistoryVar)
+		self.captureHistoryCheckboxControl.grid(row= 4, column= 1, sticky= "w", padx= 0)
 
-		self.captureHistoryCheckboxControl = ctk.CTkCheckBox(self, text= "Autofills", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureAutofillsVar)
-		self.captureHistoryCheckboxControl.grid(row= 5, column= 1, sticky= "w", padx= 20)
+		self.captureHistoryCheckboxControl = ctk.CTkCheckBox(self, text= "Autofills", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureAutofillsVar)
+		self.captureHistoryCheckboxControl.grid(row= 0, column= 1, sticky= "w", padx= 0)
 
-		self.captureDiscordTokensCheckboxControl = ctk.CTkCheckBox(self, text= "Discord Tokens", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureDiscordTokensVar)
-		self.captureDiscordTokensCheckboxControl.grid(row= 1, column= 2, sticky= "w", padx= 20)
+		self.captureDiscordTokensCheckboxControl = ctk.CTkCheckBox(self, text= "Discord Tokens", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureDiscordTokensVar)
+		self.captureDiscordTokensCheckboxControl.grid(row= 1, column= 2, sticky= "w", padx= 0)
 
-		self.captureGamesCheckboxControl = ctk.CTkCheckBox(self, text= "Games", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureGamesVar)
-		self.captureGamesCheckboxControl.grid(row= 2, column= 2, sticky= "w", padx= 20)
+		self.captureGamesCheckboxControl = ctk.CTkCheckBox(self, text= "Games", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureGamesVar)
+		self.captureGamesCheckboxControl.grid(row= 2, column= 2, sticky= "w", padx= 0)
 
-		self.captureWalletsCheckboxControl = ctk.CTkCheckBox(self, text= "Wallets", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureWalletsVar)
-		self.captureWalletsCheckboxControl.grid(row= 3, column= 2, sticky= "w", padx= 20)
+		self.captureWalletsCheckboxControl = ctk.CTkCheckBox(self, text= "Wallets", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureWalletsVar)
+		self.captureWalletsCheckboxControl.grid(row= 3, column= 2, sticky= "w", padx= 0)
 
-		self.captureWifiPasswordsCheckboxControl = ctk.CTkCheckBox(self, text= "Wifi Passwords", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureWifiPasswordsVar)
-		self.captureWifiPasswordsCheckboxControl.grid(row= 4, column= 2, sticky= "w", padx= 20)
+		self.captureWifiPasswordsCheckboxControl = ctk.CTkCheckBox(self, text= "Wifi Passwords", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureWifiPasswordsVar)
+		self.captureWifiPasswordsCheckboxControl.grid(row= 4, column= 2, sticky= "w", padx= 0)
 
-		self.captureSysteminfoCheckboxControl = ctk.CTkCheckBox(self, text= "System Info", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureSystemInfoVar)
-		self.captureSysteminfoCheckboxControl.grid(row= 1, column= 3, sticky= "w", padx= 20)
+		self.captureSysteminfoCheckboxControl = ctk.CTkCheckBox(self, text= "System Info", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureSystemInfoVar)
+		self.captureSysteminfoCheckboxControl.grid(row= 1, column= 3, sticky= "w", padx= 0)
 
-		self.captureScreenshotCheckboxControl = ctk.CTkCheckBox(self, text= "Screenshot", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureScreenshotVar)
-		self.captureScreenshotCheckboxControl.grid(row= 2, column= 3, sticky= "w", padx= 20)
+		self.captureScreenshotCheckboxControl = ctk.CTkCheckBox(self, text= "Screenshot", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureScreenshotVar)
+		self.captureScreenshotCheckboxControl.grid(row= 2, column= 3, sticky= "w", padx= 0)
 
-		self.captureTelegramChecboxControl = ctk.CTkCheckBox(self, text= "Telegram", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureTelegramVar)
-		self.captureTelegramChecboxControl.grid(row= 3, column= 3, sticky= "w", padx= 20)
+		self.captureTelegramChecboxControl = ctk.CTkCheckBox(self, text= "Telegram", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureTelegramVar)
+		self.captureTelegramChecboxControl.grid(row= 3, column= 3, sticky= "w", padx= 0)
 
-		self.captureCommonFilesChecboxControl = ctk.CTkCheckBox(self, text= "Common Files", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "cyan", text_color_disabled= "grey", variable= self.captureCommonFilesVar)
-		self.captureCommonFilesChecboxControl.grid(row= 4, column= 3, sticky= "w", padx= 20)
+		self.captureCommonFilesChecboxControl = ctk.CTkCheckBox(self, text= "Common Files", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.captureCommonFilesVar)
+		self.captureCommonFilesChecboxControl.grid(row= 4, column= 3, sticky= "w", padx= 0)
 
-		self.fakeErrorCheckboxControl = ctk.CTkCheckBox(self, text= "Fake Error", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", command= self.fakeError_Event, variable= self.fakeErrorVar)
-		self.fakeErrorCheckboxControl.grid(row= 1, column= 4, sticky= "w", padx= 20)
+		self.fakeErrorCheckboxControl = ctk.CTkCheckBox(self, text= "Fake Error", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", command= self.fakeError_Event, variable= self.fakeErrorVar)
+		self.fakeErrorCheckboxControl.grid(row= 1, column= 4, sticky= "w", padx= 0)
 
-		self.blockAvSitesCheckboxControl = ctk.CTkCheckBox(self, text= "Block AV Sites", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.blockAvSitesVar)
-		self.blockAvSitesCheckboxControl.grid(row= 2, column= 4, sticky= "w", padx= 20)
+		self.blockAvSitesCheckboxControl = ctk.CTkCheckBox(self, text= "Block AV Sites", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.blockAvSitesVar)
+		self.blockAvSitesCheckboxControl.grid(row= 2, column= 4, sticky= "w", padx= 0)
 
-		self.discordInjectionCheckboxControl = ctk.CTkCheckBox(self, text= "Discord Injection", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.discordInjectionVar)
-		self.discordInjectionCheckboxControl.grid(row= 3, column= 4, sticky= "w", padx= 20)
+		self.discordInjectionCheckboxControl = ctk.CTkCheckBox(self, text= "Discord Injection", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.discordInjectionVar)
+		self.discordInjectionCheckboxControl.grid(row= 3, column= 4, sticky= "w", padx= 0)
 
-		self.uacBypassCheckboxControl = ctk.CTkCheckBox(self, text= "UAC Bypass", font= self.font, height= 38, hover_color= "#4D4D4D", text_color= "light green", text_color_disabled= "grey", variable= self.uacBypassVar)
-		self.uacBypassCheckboxControl.grid(row= 4, column= 4, sticky= "w", padx= 20)
+		self.uacBypassCheckboxControl = ctk.CTkCheckBox(self, text= "UAC Bypass", font= self.font, height= 38, hover_color= "#F0BCD1", text_color= "pink", text_color_disabled= "grey", variable= self.uacBypassVar)
+		self.uacBypassCheckboxControl.grid(row= 4, column= 4, sticky= "w", padx= 0)
 
-		self.C2ModeButtonControl = ctk.CTkButton(self, text= "C2: Discord", height= 38, font= self.font, fg_color= "#393646", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.C2ModeButtonControl_Callback)
-		self.C2ModeButtonControl.grid(row= 1, column= 5, sticky= "ew", padx= (0, 15))
+		self.C2ModeButtonControl = ctk.CTkButton(self, text= "C2: Discord", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.C2ModeButtonControl_Callback)
+		self.C2ModeButtonControl.grid(row= 6, column= 0, sticky= "ew", padx= (5, 0))
 
-		self.bindExeButtonControl = ctk.CTkButton(self, text= "Bind Executable", height= 38, font= self.font, fg_color= "#393646", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.bindExeButtonControl_Callback)
-		self.bindExeButtonControl.grid(row= 2, column= 5, sticky= "ew", padx= (0, 15))
+		self.bindExeButtonControl = ctk.CTkButton(self, text= "Bind", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.bindExeButtonControl_Callback)
+		self.bindExeButtonControl.grid(row= 6, column= 1, sticky= "ew", padx= (5, 0))
 
-		self.selectIconButtonControl = ctk.CTkButton(self, text= "Select Icon", height= 38, font= self.font, fg_color= "#393646", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.selectIconButtonControl_Callback)
-		self.selectIconButtonControl.grid(row= 3, column= 5, sticky= "ew", padx= (0, 15))
+		self.selectIconButtonControl = ctk.CTkButton(self, text= "Select Icon", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.selectIconButtonControl_Callback)
+		self.selectIconButtonControl.grid(row= 6, column= 2, sticky= "ew", padx= (5, 0))
 
-		self.buildModeButtonControl = ctk.CTkButton(self, text= "Output: EXE File", height= 38, font= self.font, fg_color= "#393646", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.buildModeButtonControl_Callback)
-		self.buildModeButtonControl.grid(row= 4, column= 5, sticky= "ew", padx= (0, 15))
+		self.buildModeButtonControl = ctk.CTkButton(self, text= "EXE", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.buildModeButtonControl_Callback)
+		self.buildModeButtonControl.grid(row= 6, column= 3, sticky= "ew", padx= (5, 0))
 
-		self.consoleModeButtonControl = ctk.CTkButton(self, text= "Console: None", height= 38, font= self.font, fg_color= "#393646", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.consoleModeButtonControl_Callback)
-		self.consoleModeButtonControl.grid(row= 5, column= 5, sticky= "ew", padx= (0, 15))
+		self.consoleModeButtonControl = ctk.CTkButton(self, text= "Console: None", height= 38, font= self.font, fg_color= "#F0BCD1", hover_color= "#6D5D6E", text_color_disabled= "grey", command= self.consoleModeButtonControl_Callback)
+		self.consoleModeButtonControl.grid(row= 6, column= 4, sticky= "ew", padx= (5, 0))
 
-		self.buildButtonControl = ctk.CTkButton(self, text= "Build", height= 38, font= self.font, fg_color= "#1E5128", hover_color= "#4E9F3D", text_color_disabled= "grey", command= self.buildButtonControl_Callback)
-		self.buildButtonControl.grid(row= 6, column= 5, sticky= "ew", padx= (0, 15))
+		self.buildButtonControl = ctk.CTkButton(self, text= "Build", height= 45, font= self.font, fg_color= "#F0BCD1", hover_color= "#4E9F3D", text_color_disabled= "grey", command= self.buildButtonControl_Callback)
+		self.buildButtonControl.grid(row= 5, column= 5, sticky= "ew", padx= (5, 5))
 
 	def C2ModeButtonControl_Callback(self) -> None:
 		self.focus() # Removes focus from the C2 text box
@@ -321,8 +321,8 @@ class BuilderOptionsFrame(ctk.CTkFrame):
 			self.selectIconButtonControl.configure(text= SELECT)
 	
 	def buildModeButtonControl_Callback(self) -> None:
-		EXEMODE = "Output: EXE File"
-		PYMODE = "Output:   PY File"
+		EXEMODE = "EXE"
+		PYMODE = "PY"
 
 		exeOnlyChecboxControls = (
 			(self.fakeErrorCheckboxControl, self.fakeErrorVar),
@@ -761,7 +761,7 @@ class Builder(ctk.CTk):
 		ctk.set_appearance_mode("dark")
 		self.title("A5 Grabber [Builder]")
 		self.iconbitmap(os.path.join("Extras", "icon.ico"))
-		self.geometry("1250x600")
+		self.geometry("1000x400")
 		self.resizable(False, False)
 
 		self.rowconfigure(0, weight= 1)
@@ -770,7 +770,7 @@ class Builder(ctk.CTk):
 		self.columnconfigure(0, weight= 1)
 		self.columnconfigure(1, weight= 0)
 
-		self.titleLabel = ctk.CTkLabel(self, text= "A5 Grabber", font= ctk.CTkFont(size= 68, weight= "bold"), text_color= "#2F58CD")
+		self.titleLabel = ctk.CTkLabel(self, text= "A5 Grabber", font= ctk.CTkFont(size= 68, weight= "bold"), text_color= "#131315")
 		self.titleLabel.grid(row= 0, column= 0)
 
 		self.builderOptions = BuilderOptionsFrame(self)
@@ -885,7 +885,7 @@ if __name__ == "__main__":
 		if Utility.CheckForUpdates():
 			response = messagebox.askyesno("Update Checker", "A new version of the application is available. It is recommended that you update it to the latest version.\n\nDo you want to update the app? (you would be directed to the official github repository)")
 			if response:
-				webbrowser.open_new_tab("https://github.com/Blank-c/Blank-Grabber")
+				webbrowser.open_new_tab("https://github.com/unknownchesspawn/A5-Grabber")
 				exit(0)
 	
 		# Do not hide console so it can show if there is any error
