@@ -3,7 +3,7 @@
 </h1>
 <p align= "center">
    <kbd>
-   <img  src="https://cdn.discordapp.com/attachments/1278779420219277363/1327610498610368564/950d6573-0f49-4b8b-8ba7-55dc17429437.jpeg?ex=6783b120&is=67825fa0&hm=70327328cab07e0bf9ecd391b207b8cc2f5139aa03049ff8cbfeba5adb1e36f1&">
+   <img  src="https://cdn.discordapp.com/attachments/1243058698134224928/1328193033224851516/950d6573-0f49-4b8b-8ba7-55dc17429437.jpeg?ex=6785cfa7&is=67847e27&hm=e6e346738c9626c73fece9a1927d75a8ce13e6a612d85af8d6a5591eb74580f8&">
    </kbd><br><br>
    <img src="https://img.shields.io/github/languages/top/Blank-c/Blank-Grabber">
    <img src="https://img.shields.io/github/stars/Blank-c/Blank-Grabber">
